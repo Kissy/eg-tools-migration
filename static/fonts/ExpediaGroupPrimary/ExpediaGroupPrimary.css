@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Expedia Group Primary';
+    src: url('ExpediaGroupPrimary-Bold.eot');
+    src: url('ExpediaGroupPrimary-Bold.eot?#iefix') format('embedded-opentype'),
+    url('ExpediaGroupPrimary-Bold.woff2') format('woff2'),
+    url('ExpediaGroupPrimary-Bold.woff') format('woff'),
+    url('ExpediaGroupPrimary-Bold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}

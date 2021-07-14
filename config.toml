@@ -1,0 +1,43 @@
+baseURL = "https://example.org/"
+languageCode = "en-us"
+title = "Containers & Orchestration"
+theme = "reveal-hugo"
+disableKinds = ["sitemap", "RSS", "taxonomy", "term"]
+
+# uncomment for browsing at file:///
+# relativeURLs = true
+# uglyURLs = true
+
+[author]
+name = "Guillaume Le Biller"
+
+
+# currently only the unsafe mode for goldmark is supported
+[markup.goldmark.renderer]
+unsafe = true
+
+# choose between Hugo compile-time or Highlight.js
+# syntax highlighting for code inside of code fences
+[markup.highlight]
+codeFences = false  # use highlight.js
+# codeFences = true  # use hugo highlighting at compile time
+style = "tango"  # set a style for hugo highlighting
+
+[outputFormats.Reveal]
+baseName = "index"
+mediaType = "text/html"
+isHTML = true
+
+[params.reveal_hugo]
+custom_theme = "theme/expedia.scss"
+custom_theme_compile = true
+history = true
+custom_css = "/custom.scss"
+custom_css_compile = true
+transition = "none"
+background_transition = "none"
+
+# used in content/template-example
+[params.reveal_hugo.templates.grey]
+background = "#424242"
+transition = "fade"

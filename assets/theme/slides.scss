@@ -1,0 +1,77 @@
+.intro section > div {
+  //inset: 50% auto auto 25% !important;
+  //width: 50% !important;
+  //transform: translate(-50%, 0);
+  //width: 50%;
+}
+
+.three-sections {
+  position: absolute;
+  width: 100vw;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: grid;
+  max-width:150%;
+  grid-template-columns: 33% 34% 33%;
+  grid-template-rows: 100%;
+}
+.three-sections > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.four-points {
+  display: grid;
+  gap: 2em;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+}
+
+.four-points > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em .5em;
+  box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.20);
+}
+
+.arrow-container > * {
+  vertical-align: middle;
+}
+
+.css-arrow {
+  width: 4em;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 1em;
+  padding: 0.2em 0;
+  font-size: 0.5em;
+  transition: font-size 300ms linear;
+}
+
+.css-arrow__leg {
+  width: 4em;
+  height: 0.2em;
+  background: #000;
+}
+.css-arrow__leg::before {
+  top: 50%;
+  transform: translate(0, -0.15em) rotate(-45deg);
+  transform-origin: 100% 50%;
+}
+.css-arrow__leg::after {
+  top: 50%;
+  transform: translate(0, -0.05em) rotate(45deg);
+  transform-origin: 100% 50%;
+}
+.css-arrow__leg::before, .css-arrow__leg::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  background: #000;
+  width: 0.7em;
+  height: 0.2em;
+  border-radius: 1em;
+}
